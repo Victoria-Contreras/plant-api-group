@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .card-container {
     display: flex;
     justify-content: center;
@@ -69,3 +70,10 @@ img {
   gap: 16px;
 }
 
+=======
+body {
+    color: #feda4a !important;
+    font-family: 'Pathway Gothic One', sans-serif !important;
+    background-color: black !important;
+}
+>>>>>>> main
