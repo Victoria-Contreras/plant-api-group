@@ -7,7 +7,7 @@ async function start () {
 start()
 
 function createPeopleList (PeopleList) {
-    document.getElementById("card-container").innerHTML = `
+    document.getElementById("triva-cards").innerHTML = `
     <div class="card" style="width: 18rem;" id="quiz-card">
     <div class="card-body">
        <h5 class="card-title">Card title</h5>
