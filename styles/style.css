@@ -1,4 +1,4 @@
-.button-container {
+.card-container {
     display: flex;
     justify-content: center;
     height: 30px;
@@ -10,12 +10,14 @@
     display: flex;
     justify-content: center;
     font-size: 500%;
+    background-color: black;
 
    
 }
 
 body {
     background: #000;
+  
   }
   
  #intro {
@@ -28,6 +30,8 @@ body {
     letter-spacing: 1px;
     line-height: 50%;
     text-align: center;
+    padding-top: 100px;
+    background-color: black;
   }
 
 .card {
@@ -35,8 +39,16 @@ body {
   display: flex;
   justify-content: center;
   color: #feda4a;
+  background-color: black;
   
 
+}
+
+#quiz-card {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    color: #feda4a;
 }
 
 img {
