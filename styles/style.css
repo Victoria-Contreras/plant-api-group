@@ -3,3 +3,11 @@ body {
     font-family: 'Pathway Gothic One', sans-serif !important;
     background-color: black !important;
 }
+
+.card-body{
+    color: black;
+}
+
+.card-link:hover{
+    background-color: #feda4a;
+}

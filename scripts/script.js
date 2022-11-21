@@ -1,28 +1,30 @@
-async function getPerson () {
+let characterName;
+let homeworldName;
+
+async function getPerson() {
     const response = await fetch("https://swapi.dev/api/people/")
     const data = await response.json()
 
-    const name = data.results[2].name
-    const homeworldUrl = data.results[2].homeworld
+    characterName = data.results[1].name
+    const homeworldUrl = data.results[1].homeworld
 
-    getHomeworld(homeworldUrl, name)
+    getHomeworld(homeworldUrl)
 }
 
 getPerson()
 
-async function getHomeworld(homeworld, name){
+async function getHomeworld(homeworld){
     const response = await fetch(`${homeworld}`);
     const data = await response.json();
-    const homeworldName = data.name;
+    homeworldName = data.name;
     
-    const personName = name;
 
-    createPeopleList(homeworldName, personName);
+    createPeopleList(homeworldName, characterName);
 }
 
-async function createPeopleList (homeworld, name) {
+function createPeopleList (homeworld, name) {
     document.getElementById("trivia-cards").innerHTML = `
-    <div class="card" style="width: 18rem;" id="quiz-card">
+    <div class="card col-12 col-lg-4" id="quiz-card">
     <div class="card-body">
 
        <h5 class="card-title">What is ${name}'s homeplanet?</h5>
