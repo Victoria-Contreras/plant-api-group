@@ -13,18 +13,26 @@
 <body>
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-4"><img src="./images/starship.jpeg" height="200px" /></div>
-            <div class="col-auto text-center">
+            <div class="col-12 col-xl-3"><img src="./images/starship.jpeg" height="200px" style="padding-left: 20px;"/></div>
+            <div class="col-12 col-xl-6 text-center">
                 <h1>Starwars Trivia Game</h1>
                 <p>Do you know what planet your favorite character is from?</p>
             </div>
         </div>
-        <div class="row ">
-            <div class="col text-center">   
-                <p>Which is the home planet of this character?</p>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-4 pb-5">
+                <form id="search-form">
+                    <div class="input-group input-group-lg">
+                        <input class="form-control search-bar" placeholder="Search for a character" id="search-result" />
+                        <button class="btn btn-warning input-group-btn" type="submit">
+                            Search
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="row" id="triva-cards">
+        
+        <div class="row d-flex justify-content-center p-2" id="trivia-cards">
             <p>Blast off!</p>
         </div>
     </div>
