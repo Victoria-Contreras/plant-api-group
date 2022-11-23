@@ -4,10 +4,13 @@ body {
     background-color: black !important;
 }
 
-.card-body{
+
+#image {
+    padding: 10px;
+
+}
+
+.card-title{
     color: black;
 }
 
-.card-link:hover{
-    background-color: #feda4a;
-}
